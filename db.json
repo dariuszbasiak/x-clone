@@ -1,0 +1,146 @@
+{
+  "tweets": [
+    {
+      "id": "1",
+      "name": "John Smith",
+      "author_id": "johnsmith",
+      "text": "What are the pros of object-oriented programming?<br><br>Please, explain as if I'm 5.",
+      "comments": [
+        {
+          "text": "New comment",
+          "name": "Amelia Warner",
+          "author_id": "ameliawarner"
+        },
+        {
+          "text": "Hello!",
+          "name": "Amelia Warner",
+          "author_id": "ameliawarner"
+        },
+        {
+          "text": "test Comment",
+          "name": "Darkkk",
+          "author_id": "darkkk"
+        }
+      ],
+      "likes": [
+        null,
+        "dariuszbasiak",
+        "darkkk"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Carla Notarobot",
+      "author_id": "carlanotarobot",
+      "text": "Why use a debugger when you can fill your code with hundreds of <code>print()</code> statements?",
+      "comments": [
+        {
+          "text": "test comment",
+          "name": "Amelia Warner",
+          "author_id": "ameliawarner"
+        }
+      ],
+      "likes": [
+        "ameliawarner"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Amelia Warner",
+      "author_id": "ameliawarner",
+      "text": "Describe your relationship with JavaScript with one word.",
+      "likes": []
+    },
+    {
+      "text": "sfadsfsfd",
+      "name": "Amelia Warner",
+      "author_id": "ameliawarner",
+      "createdAt": 1707744897525,
+      "id": "3qDBh-6",
+      "likes": [
+        "ameliawarner"
+      ]
+    },
+    {
+      "text": "New Value",
+      "author_id": "ameliawarner",
+      "createdAt": 1707865386921,
+      "id": "BQb61_n",
+      "likes": [
+        "ameliawarner"
+      ]
+    },
+    {
+      "text": "Checking revalidate",
+      "author_id": "ameliawarner",
+      "createdAt": 1707865526993,
+      "id": "QwuiDil"
+    },
+    {
+      "text": "Hello Word",
+      "author_id": "dariuszbasiak",
+      "createdAt": 1707922465767,
+      "id": "ut3fJpt"
+    },
+    {
+      "text": "asdfsdfasdfasdfasdfsdfasdfadsfasdfasdfdsf",
+      "author_id": "ameliawarner",
+      "createdAt": 1708076386540,
+      "id": "gF09r6k"
+    },
+    {
+      "text": "asdfsdfasdfasdfasdfsdfasdfadsfasdfasdfdsf",
+      "author_id": "ameliawarner",
+      "createdAt": 1708076466090,
+      "id": "N8lKf27"
+    },
+    {
+      "text": "adfadfasdf",
+      "author_id": "ameliawarner",
+      "name": "Amelia Warner",
+      "createdAt": 1708076504788,
+      "id": "ebcGPPl"
+    }
+  ],
+  "users": [
+    {
+      "id": "johnsmith",
+      "name": "John Smith",
+      "email": "johnsmith@gmail.com"
+    },
+    {
+      "id": "carlanotarobot",
+      "name": "Carla Notarobot",
+      "email": "carlanotarobot@hotmail.com"
+    },
+    {
+      "id": "ameliawarner",
+      "name": "Amelia Warner",
+      "email": "ameliawarner@yahoo.com"
+    },
+    {
+      "name": "Dariusz Basiak",
+      "email": "d@b.com",
+      "id": "dariuszbasiak",
+      "createdAt": 1707922435231
+    },
+    {
+      "name": "Test User",
+      "email": "da@b.pl",
+      "id": "testuser",
+      "createdAt": 1707997553805
+    },
+    {
+      "name": "Test user2",
+      "email": "d@ba.pl",
+      "id": "testuser2",
+      "createdAt": 1707997808615
+    },
+    {
+      "name": "Darkkk",
+      "email": "d@b.pl",
+      "id": "darkkk",
+      "createdAt": 1708075812729
+    }
+  ]
+}

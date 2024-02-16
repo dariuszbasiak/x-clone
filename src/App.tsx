@@ -1,25 +1,57 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Provider } from "react-redux";
+import store from "./store";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { RootPage } from "./pages/RootPage";
+import { Error404Page } from "./pages/Error404Page";
+import { LoginPage } from "./pages/LoginPage";
+import { BoardPage, getPosts } from "./pages/BoardPage";
+import { UserPostsPage } from "./pages/UserPostsPage";
+import { SignupPage } from "./pages/SignupPage";
+
+const routes = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootPage />,
+    errorElement: <Error404Page />,
+    children: [
+      {
+        path: "/login",
+        element: <LoginPage />,
+      },
+      {
+        path: "/signup",
+        element: <SignupPage />,
+      },
+      {
+        path: "/",
+        element: <BoardPage />,
+        loader() {
+          return getPosts();
+        },
+      },
+      {
+        path: "/user-posts",
+        children: [
+          {
+            path: ":id",
+            element: <UserPostsPage />,
+            loader({ params }) {
+              return getPosts(params.id);
+            },
+          },
+        ],
+      },
+    ],
+  },
+]);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <RouterProvider router={routes} />
+    </Provider>
   );
 }
 
